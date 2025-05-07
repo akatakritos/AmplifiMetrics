@@ -4,7 +4,7 @@ namespace AmplifiMetrics;
 
 public enum MetricType
 {
-    Guage,
+    Gauge,
     Counter
 }
 
@@ -59,7 +59,7 @@ public static class MetricConverter
 
         if (device["HappinessScore"] is JsonValue happinessScore)
         {
-            yield return new Metric(MetricType.Guage, MetricNames.HappinessScore, "Happiness score is a measure of device connection health",
+            yield return new Metric(MetricType.Gauge, MetricNames.HappinessScore, "Happiness score is a measure of device connection health",
                 happinessScore.GetValue<double>(), deviceName);
         }
 
