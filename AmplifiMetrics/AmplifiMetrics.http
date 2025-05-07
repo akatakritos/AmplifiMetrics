@@ -1,6 +1,6 @@
 @AmplifiMetrics_HostAddress = http://localhost:5009
 
-GET {{AmplifiMetrics_HostAddress}}/weatherforecast/
+GET {{AmplifiMetrics_HostAddress}}/metrics/
 Accept: application/json
 
 ###
