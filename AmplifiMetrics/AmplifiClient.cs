@@ -21,37 +21,54 @@ public partial class AmplifiClient
 
     public async Task<string> GetMetrics()
     {
-        await EnsureLogin();
-
-        if (_cachedInfoToken is null)
+        try
         {
-            var html = await _client.GetStringAsync("/info.php");
-            if (TokenRegex.Match(html) is { Success: true } match)
+            await EnsureLogin();
+
+            if (_cachedInfoToken is null)
             {
-                _cachedInfoToken = match.Groups[1].Value;
+                var html = await _client.GetStringAsync("/info.php");
+                if (TokenRegex.Match(html) is { Success: true } match)
+                {
+                    _cachedInfoToken = match.Groups[1].Value;
+                }
+                else
+                {
+                    throw new Exception("Could not find token");
+                }
             }
-            else
+
+            Debug.Assert(_cachedInfoToken is not null);
+            var response = await _client.SendAsync(new HttpRequestMessage(HttpMethod.Post, "/info-async.php")
             {
-                throw new Exception("Could not find token");
-            }
+                Content = new FormUrlEncodedContent(new Dictionary<string, string>
+                {
+                    { "token", _cachedInfoToken! },
+                    { "do", "full" }
+                })
+            });
+
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadAsStringAsync();
         }
-
-        Debug.Assert(_cachedInfoToken is not null);
-        var response = await _client.SendAsync(new HttpRequestMessage(HttpMethod.Post, "/info-async.php")
+        catch
         {
-            Content = new FormUrlEncodedContent(new Dictionary<string, string>
-            {
-                { "token", _cachedInfoToken! },
-                { "do", "full"}
-            })
-        });
-
-        response.EnsureSuccessStatusCode();
-        return await response.Content.ReadAsStringAsync();
+            // reset all our auth dataso that we renew it next time prometheus scrapes us
+            ResetAuthState();
+            
+            throw;
+        }
     }
     
     [GeneratedRegex("var token='([0-9a-f]+)'")]
     private static partial Regex TokenRegex { get; }
+
+    private void ResetAuthState()
+    {
+        _cachedInfoToken = null;
+        foreach (Cookie cookie in _cookieContainer.GetCookies(_client.BaseAddress!))
+            cookie.Expired = true;
+    }
 
     private async Task EnsureLogin()
     {
