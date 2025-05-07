@@ -46,6 +46,7 @@ public partial class AmplifiClient
             })
         });
 
+        response.EnsureSuccessStatusCode();
         return await response.Content.ReadAsStringAsync();
     }
     

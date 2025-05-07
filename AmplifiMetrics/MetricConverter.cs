@@ -12,10 +12,10 @@ public record Metric(MetricType Type, string Name, string Help, double Value, st
 
 public static class MetricNames
 {
-    public const string HappinessScore = "happiness_score";
-    public const string ReceivedBytes = "received_bytes";
-    public const string TransmittedBytes = "transmitted_bytes";
-    public const string Uptime = "uptime_seconds";
+    public const string HappinessScore = "amplifi_happiness_score";
+    public const string ReceivedBytes = "amplifi_received_bytes_total";
+    public const string TransmittedBytes = "amplifi_transmitted_bytes_total";
+    public const string Uptime = "amplifi_uptime_seconds_total";
 }
 
 public static class MetricConverter
@@ -59,19 +59,19 @@ public static class MetricConverter
 
         if (device["HappinessScore"] is JsonValue happinessScore)
         {
-            yield return new Metric(MetricType.Guage, MetricNames.HappinessScore, "Happiness score",
+            yield return new Metric(MetricType.Guage, MetricNames.HappinessScore, "Happiness score is a measure of device connection health",
                 happinessScore.GetValue<double>(), deviceName);
         }
 
         if (device["RxBytes"] is JsonValue rxBytes)
         {
-            yield return new Metric(MetricType.Counter, MetricNames.ReceivedBytes, "Received bytes",
+            yield return new Metric(MetricType.Counter, MetricNames.ReceivedBytes, "Total count of bytes received by the device",
                 rxBytes.GetValue<double>(), deviceName);
         }
 
         if (device["TxBytes"] is JsonValue txBytes)
         {
-            yield return new Metric(MetricType.Counter, MetricNames.TransmittedBytes, "Transmitted bytes",
+            yield return new Metric(MetricType.Counter, MetricNames.TransmittedBytes, "Total count of bytes transmitted by the device",
                 txBytes.GetValue<double>(), deviceName);
         }
     }

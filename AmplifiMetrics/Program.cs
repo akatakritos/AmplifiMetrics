@@ -30,7 +30,9 @@ if (app.Environment.IsDevelopment())
 app.MapGet("/metrics", async (AmplifiClient client) =>
 {
     ArgumentNullException.ThrowIfNull(client);
-    return await client.GetMetrics();
+    var metricsJson = await client.GetMetrics();
+    var metrics = MetricConverter.Parse(metricsJson);
+    return PrometheusRenderer.Render(metrics);
 });
 
 app.Run();
