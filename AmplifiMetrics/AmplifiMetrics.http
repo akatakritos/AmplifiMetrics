@@ -1,0 +1,6 @@
+@AmplifiMetrics_HostAddress = http://localhost:5009
+
+GET {{AmplifiMetrics_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
