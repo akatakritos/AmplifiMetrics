@@ -1,0 +1,936 @@
+[
+  {
+    "18:e8:29:53:c5:1e": {
+      "cost": 0,
+      "friendly_name": "Living Room AMPLIFI",
+      "ip": "192.168.164.1",
+      "level": 1,
+      "mac": "18:e8:29:53:c5:1e",
+      "platform_name": "AFi-R-HD",
+      "protocol": 140,
+      "region_lock": "US",
+      "role": "Router",
+      "uptime": 350132
+    }
+  },
+  {
+    "18:e8:29:53:c5:1e": {
+      "2.4 GHz": {
+        "User network": {
+          "08:f9:e0:42:94:5a": {
+            "Address": "192.168.164.111",
+            "Description": "ESP-42945A",
+            "HappinessScore": 80,
+            "HostName": "ESP-42945A",
+            "Inactive": 22810,
+            "LeaseValidity": 34959,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 1,
+            "Mode": "802.11g",
+            "RxBitrate": 54000,
+            "RxBytes": 3956344,
+            "RxBytes_30sec": 684,
+            "RxBytes_60sec": 684,
+            "RxMcs": 0,
+            "RxMhz": 20,
+            "SignalQuality": 84,
+            "TxBitrate": 48000,
+            "TxBytes": 15868683,
+            "TxBytes_30sec": 650,
+            "TxBytes_60sec": 650,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "14:2b:2f:d1:7f:24": {
+            "Address": "192.168.164.110",
+            "HappinessScore": 75,
+            "HostName": "Pura-7F24",
+            "Inactive": 4660,
+            "LeaseValidity": 26453,
+            "MaxBandwidth": 40,
+            "MaxSpatialStreams": 1,
+            "Mode": "802.11n",
+            "RxBitrate": 52000,
+            "RxBytes": 2332370,
+            "RxBytes_15sec": 80,
+            "RxBytes_30sec": 160,
+            "RxBytes_60sec": 375,
+            "RxMcs": 5,
+            "RxMhz": 20,
+            "SignalQuality": 81,
+            "TxBitrate": 6000,
+            "TxBytes": 19395628,
+            "TxBytes_15sec": 708,
+            "TxBytes_30sec": 1552,
+            "TxBytes_5sec": 222,
+            "TxBytes_60sec": 3303,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "24:d7:eb:3e:1a:cc": {
+            "Address": "192.168.164.179",
+            "Description": "Pura-1ACC",
+            "HappinessScore": 75,
+            "HostName": "Pura-1ACC",
+            "Inactive": 4650,
+            "LeaseValidity": 21707,
+            "MaxBandwidth": 40,
+            "MaxSpatialStreams": 1,
+            "Mode": "802.11n",
+            "RxBitrate": 43300,
+            "RxBytes": 784686,
+            "RxBytes_60sec": 113,
+            "RxMcs": 4,
+            "RxMhz": 20,
+            "SignalQuality": 51,
+            "TxBitrate": 6000,
+            "TxBytes": 15198414,
+            "TxBytes_15sec": 570,
+            "TxBytes_30sec": 1140,
+            "TxBytes_5sec": 174,
+            "TxBytes_60sec": 2731,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "44:ea:d8:1f:c1:bc": {
+            "Address": "192.168.164.133",
+            "Description": "Ring Chime",
+            "HappinessScore": 80,
+            "HostName": "44EAD81FC1BC-mysimplelink",
+            "Inactive": 17330,
+            "LeaseValidity": 25269,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 1,
+            "Mode": "802.11n",
+            "RxBitrate": 39000,
+            "RxBytes": 20821885,
+            "RxBytes_30sec": 118,
+            "RxBytes_60sec": 8489,
+            "RxMcs": 4,
+            "RxMhz": 20,
+            "SignalQuality": 93,
+            "TxBitrate": 54000,
+            "TxBytes": 28821358,
+            "TxBytes_30sec": 180,
+            "TxBytes_60sec": 14796,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "98:25:4a:f9:b9:5f": {
+            "Address": "192.168.164.196",
+            "Description": "EP10",
+            "HappinessScore": 80,
+            "HostName": "EP10",
+            "Inactive": 6210,
+            "LeaseValidity": 27988,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 1,
+            "Mode": "802.11n",
+            "RxBitrate": 65000,
+            "RxBytes": 855486,
+            "RxBytes_60sec": 167,
+            "RxMcs": 7,
+            "RxMhz": 20,
+            "SignalQuality": 61,
+            "TxBitrate": 19500,
+            "TxBytes": 25311485,
+            "TxBytes_15sec": 729,
+            "TxBytes_30sec": 2187,
+            "TxBytes_60sec": 4655,
+            "TxMcs": 2,
+            "TxMhz": 20
+          },
+          "b8:80:4f:69:de:f6": {
+            "Address": "192.168.164.237",
+            "Description": "RingHpCam-f6",
+            "HappinessScore": 90,
+            "Inactive": 60,
+            "LeaseValidity": 38784,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 2,
+            "Mode": "802.11n",
+            "RxBitrate": 115600,
+            "RxBytes": 267400804,
+            "RxBytes_15sec": 8283,
+            "RxBytes_30sec": 23190,
+            "RxBytes_5sec": 8156,
+            "RxBytes_60sec": 42488,
+            "RxMcs": 13,
+            "RxMhz": 20,
+            "SignalQuality": 69,
+            "TxBitrate": 104000,
+            "TxBytes": 1208834818,
+            "TxBytes_15sec": 598,
+            "TxBytes_30sec": 1307,
+            "TxBytes_5sec": 463,
+            "TxBytes_60sec": 2843,
+            "TxMcs": 13,
+            "TxMhz": 20
+          },
+          "c4:ac:aa:68:f6:be": {
+            "Address": "192.168.164.189",
+            "Description": "MattsiP14ProMax",
+            "HappinessScore": 25,
+            "HostName": "MattsiP14ProMax",
+            "Inactive": 40,
+            "LeaseValidity": 39598,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 2,
+            "Mode": "802.11n",
+            "RxBitrate": 19500,
+            "RxBytes": 5133960,
+            "RxBytes_15sec": 25421,
+            "RxBytes_30sec": 35047,
+            "RxBytes_5sec": 2406,
+            "RxBytes_60sec": 60567,
+            "RxMcs": 2,
+            "RxMhz": 20,
+            "SignalQuality": 60,
+            "TxBitrate": 1000,
+            "TxBytes": 924806,
+            "TxBytes_15sec": 14097,
+            "TxBytes_30sec": 14847,
+            "TxBytes_5sec": 312,
+            "TxBytes_60sec": 29500,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "d0:c5:d3:05:7f:2b": {
+            "Address": "192.168.164.132",
+            "Description": "Roomba",
+            "HappinessScore": 75,
+            "HostName": "Roomba-3168070060407740",
+            "Inactive": 22950,
+            "LeaseValidity": 38270,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 1,
+            "Mode": "802.11n",
+            "RxBitrate": 52000,
+            "RxBytes": 1132792,
+            "RxBytes_30sec": 88,
+            "RxBytes_60sec": 176,
+            "RxMcs": 5,
+            "RxMhz": 20,
+            "SignalQuality": 56,
+            "TxBitrate": 1000,
+            "TxBytes": 1477718,
+            "TxBytes_30sec": 116,
+            "TxBytes_60sec": 232,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "d6:e8:55:75:19:7e": {
+            "Address": "192.168.164.216",
+            "HappinessScore": 80,
+            "HostName": "MacBookPro",
+            "Inactive": 20,
+            "LeaseValidity": 35540,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 2,
+            "Mode": "802.11n",
+            "RxBitrate": 57800,
+            "RxBytes": 7852279,
+            "RxBytes_15sec": 22610,
+            "RxBytes_30sec": 46273,
+            "RxBytes_5sec": 10504,
+            "RxBytes_60sec": 83562,
+            "RxMcs": 5,
+            "RxMhz": 20,
+            "SignalQuality": 70,
+            "TxBitrate": 24000,
+            "TxBytes": 2361054,
+            "TxBytes_15sec": 11306,
+            "TxBytes_30sec": 16159,
+            "TxBytes_5sec": 1453,
+            "TxBytes_60sec": 29889,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "f2:8f:e2:68:d9:26": {
+            "Address": "192.168.164.220",
+            "Description": "Matts-New-iPad",
+            "HappinessScore": 80,
+            "Inactive": 50,
+            "LeaseValidity": 40995,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 2,
+            "Mode": "802.11n",
+            "RxBitrate": 65000,
+            "RxBytes": 11577721,
+            "RxBytes_15sec": 15998,
+            "RxBytes_30sec": 23063,
+            "RxBytes_5sec": 2162,
+            "RxBytes_60sec": 42619,
+            "RxMcs": 6,
+            "RxMhz": 20,
+            "SignalQuality": 60,
+            "TxBitrate": 24000,
+            "TxBytes": 2362636,
+            "TxBytes_15sec": 13299,
+            "TxBytes_30sec": 24307,
+            "TxBytes_5sec": 460,
+            "TxBytes_60sec": 48120,
+            "TxMcs": 0,
+            "TxMhz": 20
+          }
+        }
+      },
+      "5 GHz": {
+        "User network": {
+          "18:b4:30:87:59:e7": {
+            "Address": "192.168.164.225",
+            "Description": "Nest",
+            "HappinessScore": 80,
+            "HostName": "09AA01AC44160K4Y",
+            "Inactive": 6840,
+            "LeaseValidity": 26975,
+            "MaxBandwidth": 20,
+            "MaxSpatialStreams": 1,
+            "Mode": "802.11n",
+            "RxBitrate": 72200,
+            "RxBytes": 4221144,
+            "RxBytes_60sec": 66,
+            "RxMcs": 7,
+            "RxMhz": 20,
+            "SignalQuality": 73,
+            "TxBitrate": 6000,
+            "TxBytes": 8470432,
+            "TxBytes_15sec": 24,
+            "TxBytes_30sec": 72,
+            "TxBytes_60sec": 192,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "64:c7:53:e2:c0:2c": {
+            "Address": "192.168.164.7",
+            "Description": "MacBook-Air",
+            "HappinessScore": 10,
+            "HostName": "Jillians-Air",
+            "Inactive": 18850,
+            "LeaseValidity": -1,
+            "MaxBandwidth": 80,
+            "MaxSpatialStreams": 2,
+            "Mode": "802.11ac",
+            "RxBitrate": 6000,
+            "RxBytes": 697439,
+            "RxMcs": 0,
+            "RxMhz": 20,
+            "SignalQuality": 86,
+            "TxBitrate": 6000,
+            "TxBytes": 200169,
+            "TxBytes_30sec": 24,
+            "TxBytes_60sec": 24,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "90:d0:92:7e:20:bc": {
+            "Address": "192.168.164.194",
+            "Description": "DIRECTV-D74VB3LD111422",
+            "HappinessScore": 100,
+            "HostName": "DIRECTV-D74VB3LD111422",
+            "Inactive": 490,
+            "LeaseValidity": 38770,
+            "MaxBandwidth": 80,
+            "MaxSpatialStreams": 2,
+            "Mode": "802.11ac",
+            "RxBitrate": 866700,
+            "RxBytes": 397979425,
+            "RxBytes_15sec": 23654,
+            "RxBytes_30sec": 46323,
+            "RxBytes_5sec": 9522,
+            "RxBytes_60sec": 80557,
+            "RxMcs": 9,
+            "RxMhz": 80,
+            "SignalQuality": 100,
+            "TxBitrate": 866700,
+            "TxBytes": 126333023,
+            "TxBytes_15sec": 4869,
+            "TxBytes_30sec": 8991,
+            "TxBytes_5sec": 1759,
+            "TxBytes_60sec": 17772,
+            "TxMcs": 9,
+            "TxMhz": 80
+          },
+          "9a:7c:34:8e:38:2d": {
+            "Address": "192.168.164.6",
+            "Description": "Jillians-iPad",
+            "HappinessScore": 90,
+            "Inactive": 10,
+            "LeaseValidity": -1,
+            "MaxBandwidth": 80,
+            "MaxSpatialStreams": 2,
+            "Mode": "802.11ac",
+            "RxBitrate": 351000,
+            "RxBytes": 44767367,
+            "RxBytes_15sec": 15089,
+            "RxBytes_30sec": 23070,
+            "RxBytes_5sec": 1650,
+            "RxBytes_60sec": 36258,
+            "RxMcs": 4,
+            "RxMhz": 80,
+            "SignalQuality": 70,
+            "TxBitrate": 6000,
+            "TxBytes": 3711571,
+            "TxBytes_15sec": 832,
+            "TxBytes_30sec": 1504,
+            "TxBytes_5sec": 168,
+            "TxBytes_60sec": 2486,
+            "TxMcs": 0,
+            "TxMhz": 20
+          },
+          "e0:4f:43:d8:59:88": {
+            "Address": "192.168.164.235",
+            "Description": "Ring Pro",
+            "HappinessScore": 85,
+            "Inactive": 10,
+            "LeaseValidity": 38762,
+            "MaxBandwidth": 40,
+            "MaxSpatialStreams": 1,
+            "Mode": "802.11n",
+            "RxBitrate": 150000,
+            "RxBytes": 253111470,
+            "RxBytes_15sec": 7267,
+            "RxBytes_30sec": 21368,
+            "RxBytes_5sec": 7201,
+            "RxBytes_60sec": 38837,
+            "RxMcs": 7,
+            "RxMhz": 40,
+            "SignalQuality": 56,
+            "TxBitrate": 6000,
+            "TxBytes": 2002069641,
+            "TxBytes_15sec": 238,
+            "TxBytes_30sec": 1072,
+            "TxBytes_5sec": 72,
+            "TxBytes_60sec": 2242,
+            "TxMcs": 0,
+            "TxMhz": 20
+          }
+        }
+      }
+    }
+  },
+  {
+    "00:e0:4c:68:1e:f3": {
+      "connection": "ethernet",
+      "description": "lt015",
+      "host_name": "Matts-MacBook",
+      "icon_id": 3798,
+      "ip": "192.168.164.244",
+      "lease_validity": 41935,
+      "port": 1
+    },
+    "08:f9:e0:42:94:5a": {
+      "connection": "wireless",
+      "description": "ESP-42945A",
+      "host_name": "ESP-42945A",
+      "icon_id": 3797,
+      "ip": "192.168.164.111",
+      "lease_validity": 34956
+    },
+    "14:2b:2f:d1:7f:24": {
+      "connection": "wireless",
+      "host_name": "Pura-7F24",
+      "icon_id": 3797,
+      "ip": "192.168.164.110",
+      "lease_validity": 26450
+    },
+    "18:b4:30:87:59:e7": {
+      "connection": "wireless",
+      "description": "Nest",
+      "host_name": "09AA01AC44160K4Y",
+      "icon_id": 3797,
+      "ip": "192.168.164.225",
+      "lease_validity": 26972
+    },
+    "20:23:51:11:1d:e9": {
+      "connection": "ethernet",
+      "description": "Name not available",
+      "port": 1
+    },
+    "24:d7:eb:3e:1a:cc": {
+      "connection": "wireless",
+      "description": "Pura-1ACC",
+      "host_name": "Pura-1ACC",
+      "icon_id": 3797,
+      "ip": "192.168.164.179",
+      "lease_validity": 21704
+    },
+    "38:56:3d:3f:97:37": {
+      "connection": "ethernet",
+      "custom_info": {
+        "fingerprint": {
+          "device_id": 4455
+        }
+      },
+      "description": "XBOX",
+      "host_name": "XBOX",
+      "icon_id": 4455,
+      "ip": "192.168.164.147",
+      "lease_validity": 38830,
+      "port": 1
+    },
+    "44:ea:d8:1f:c1:bc": {
+      "connection": "wireless",
+      "description": "Ring Chime",
+      "host_name": "44EAD81FC1BC-mysimplelink",
+      "icon_id": 3797,
+      "ip": "192.168.164.133",
+      "lease_validity": 25266
+    },
+    "5c:aa:fd:cd:11:a2": {
+      "connection": "ethernet",
+      "description": "SonosZP",
+      "host_name": "SonosZP",
+      "icon_id": 293,
+      "ip": "192.168.164.135",
+      "lease_validity": 27205,
+      "port": 1
+    },
+    "64:c7:53:e2:c0:2c": {
+      "connection": "wireless",
+      "description": "MacBook-Air",
+      "host_name": "Jillians-Air",
+      "icon_id": 3797,
+      "ip": "192.168.164.7",
+      "lease_validity": -1
+    },
+    "84:ea:ed:0f:56:77": {
+      "connection": "ethernet",
+      "description": "RokuUltra",
+      "host_name": "RokuUltra",
+      "icon_id": 3798,
+      "ip": "192.168.164.159",
+      "lease_validity": 38734,
+      "port": 1
+    },
+    "90:d0:92:7e:20:bc": {
+      "connection": "wireless",
+      "description": "DIRECTV-D74VB3LD111422",
+      "host_name": "DIRECTV-D74VB3LD111422",
+      "icon_id": 1681,
+      "ip": "192.168.164.194",
+      "lease_validity": 38767
+    },
+    "98:25:4a:f9:b9:5f": {
+      "connection": "wireless",
+      "description": "EP10",
+      "host_name": "EP10",
+      "icon_id": 3797,
+      "ip": "192.168.164.196",
+      "lease_validity": 27985
+    },
+    "9a:7c:34:8e:38:2d": {
+      "connection": "wireless",
+      "description": "Jillians-iPad",
+      "host_name": "Jillians-iPad",
+      "icon_id": 3797,
+      "ip": "192.168.164.6",
+      "lease_validity": -1
+    },
+    "9c:a2:f4:b8:8e:23": {
+      "connection": "ethernet",
+      "description": "TL-SG105E",
+      "port": 1
+    },
+    "a0:ce:c8:bf:04:a3": {
+      "connection": "ethernet",
+      "description": "MW-FQVWJ34",
+      "host_name": "MW-FQVWJ34",
+      "icon_id": 3798,
+      "ip": "192.168.164.109",
+      "lease_validity": 26909,
+      "port": 1
+    },
+    "b8:80:4f:69:de:f6": {
+      "connection": "wireless",
+      "description": "RingHpCam-f6",
+      "icon_id": 3797,
+      "ip": "192.168.164.237",
+      "lease_validity": 38781
+    },
+    "c4:ac:aa:68:f6:be": {
+      "connection": "wireless",
+      "description": "MattsiP14ProMax",
+      "host_name": "MattsiP14ProMax",
+      "icon_id": 3797,
+      "ip": "192.168.164.189",
+      "lease_validity": 39595
+    },
+    "c4:f7:c1:05:13:8b": {
+      "connection": "ethernet",
+      "host_name": "Basement",
+      "icon_id": 3798,
+      "ip": "192.168.164.214",
+      "lease_validity": 38709,
+      "port": 1
+    },
+    "d0:c5:d3:05:7f:2b": {
+      "connection": "wireless",
+      "description": "Roomba",
+      "host_name": "Roomba-3168070060407740",
+      "icon_id": 3797,
+      "ip": "192.168.164.132",
+      "lease_validity": 38267
+    },
+    "d6:e8:55:75:19:7e": {
+      "connection": "wireless",
+      "host_name": "MacBookPro",
+      "icon_id": 3797,
+      "ip": "192.168.164.216",
+      "lease_validity": 35537
+    },
+    "e0:4f:43:d8:59:88": {
+      "connection": "wireless",
+      "description": "Ring Pro",
+      "icon_id": 3797,
+      "ip": "192.168.164.235",
+      "lease_validity": 38759
+    },
+    "e8:ff:1e:da:72:76": {
+      "connection": "ethernet",
+      "description": "beelink-01",
+      "host_name": "beelink-01",
+      "icon_id": 3798,
+      "ip": "192.168.164.8",
+      "lease_validity": -1,
+      "port": 1
+    },
+    "f2:8f:e2:68:d9:26": {
+      "connection": "wireless",
+      "description": "Matts-New-iPad",
+      "host_name": "Matts-New-iPad",
+      "icon_id": 3797,
+      "ip": "192.168.164.220",
+      "lease_validity": 40992
+    }
+  },
+  {
+    "18:e8:29:53:c5:1e": {
+      "00:e0:4c:68:1e:f3": 1,
+      "20:23:51:11:1d:e9": 1,
+      "38:56:3d:3f:97:37": 1,
+      "5c:aa:fd:cd:11:a2": 1,
+      "84:ea:ed:0f:56:77": 1,
+      "9c:a2:f4:b8:8e:23": 1,
+      "a0:ce:c8:bf:04:a3": 1,
+      "c4:f7:c1:05:13:8b": 1,
+      "e8:ff:1e:da:72:76": 1
+    }
+  },
+  {
+    "18:e8:29:53:c5:1e": {
+      "eth-0": {
+        "link": true,
+        "link_speed": 1000,
+        "rx_bitrate": 30,
+        "tx_bitrate": 52
+      },
+      "eth-1": {
+        "link": true,
+        "link_speed": 1000,
+        "rx_bitrate": 89,
+        "tx_bitrate": 111
+      },
+      "eth-2": {
+        "link": false
+      },
+      "eth-3": {
+        "link": false
+      },
+      "eth-4": {
+        "link": false
+      }
+    }
+  },
+  {
+    "00:e0:4c:68:1e:f3": {
+      "bonjour": {
+        "ip": "192.168.164.244",
+        "services": [
+          "867D5FBB05A7@Matt’s MacBook._raop._tcp.local",
+          "Matts-MacBook.local",
+          "Matt’s MacBook._airplay._tcp.local",
+          "Matt’s MacBook._companion-link._tcp.local",
+          "Matt’s MacBook._rfb._tcp.local",
+          "Matt’s MacBook._sftp-ssh._tcp.local",
+          "Matt’s MacBook._ssh._tcp.local",
+          "_airplay._tcp.local",
+          "_companion-link._tcp.local",
+          "_raop._tcp.local",
+          "_rfb._tcp.local",
+          "_sftp-ssh._tcp.local",
+          "_ssh._tcp.local"
+        ]
+      },
+      "device": {
+        "host_name": "Matts-MacBook",
+        "id": 3798,
+        "model_name": "Ethernet",
+        "name": "Matts-MacBook"
+      }
+    },
+    "08:f9:e0:42:94:5a": {
+      "device": {
+        "host_name": "ESP-42945A",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "ESP-42945A"
+      }
+    },
+    "14:2b:2f:d1:7f:24": {
+      "device": {
+        "host_name": "Pura-7F24",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "Pura-7F24"
+      }
+    },
+    "18:b4:30:87:59:e7": {
+      "device": {
+        "host_name": "09AA01AC44160K4Y",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "09AA01AC44160K4Y"
+      }
+    },
+    "20:23:51:11:1d:e9": {
+      "device": {
+        "id": 3798,
+        "model_name": "Ethernet"
+      }
+    },
+    "24:d7:eb:3e:1a:cc": {
+      "device": {
+        "host_name": "Pura-1ACC",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "Pura-1ACC"
+      }
+    },
+    "38:56:3d:3f:97:37": {
+      "device": {
+        "host_name": "XBOX",
+        "id": 3798,
+        "model_name": "Ethernet",
+        "name": "XBOX"
+      }
+    },
+    "44:ea:d8:1f:c1:bc": {
+      "device": {
+        "host_name": "44EAD81FC1BC-mysimplelink",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "44EAD81FC1BC-mysimplelink"
+      }
+    },
+    "5c:aa:fd:cd:11:a2": {
+      "bonjour": {
+        "ip": "192.168.164.135",
+        "services": [
+          "5CAAFDCD11A2@Office._raop._tcp.local",
+          "Office._airplay._tcp.local",
+          "RINCON_5CAAFDCD11A201400@Office._sonos._tcp.local",
+          "Sonos-5CAAFDCD11A2.local",
+          "_airplay._tcp.local",
+          "_raop._tcp.local",
+          "_sonos._tcp.local",
+          "_spotify-connect._tcp.local",
+          "sonosRINCON_5CAAFDCD11A201400._spotify-connect._tcp.local"
+        ]
+      },
+      "device": {
+        "host_name": "SonosZP",
+        "id": 293,
+        "model_name": "Sonos One",
+        "name": "SonosZP"
+      }
+    },
+    "64:c7:53:e2:c0:2c": {
+      "device": {
+        "host_name": "Jillians-Air",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "Jillians-Air"
+      }
+    },
+    "84:ea:ed:0f:56:77": {
+      "device": {
+        "host_name": "RokuUltra",
+        "id": 3798,
+        "model_name": "Ethernet",
+        "name": "RokuUltra"
+      }
+    },
+    "90:d0:92:7e:20:bc": {
+      "bonjour": {
+        "ip": "192.168.164.194",
+        "services": [
+          "21447dbd-521f-052c-62b5-86491d217bf1.local",
+          "Android.local",
+          "Living Room._androidtvremote2._tcp.local",
+          "Pendant-21447dbd521f052c62b586491d217bf1._googlecast._tcp.local",
+          "_androidtvremote2._tcp.local",
+          "_googlecast._tcp.local"
+        ]
+      },
+      "device": {
+        "host_name": "DIRECTV-D74VB3LD111422",
+        "id": 1681,
+        "model_name": "Android Device",
+        "name": "DIRECTV-D74VB3LD111422"
+      }
+    },
+    "98:25:4a:f9:b9:5f": {
+      "device": {
+        "host_name": "EP10",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "EP10"
+      }
+    },
+    "9a:7c:34:8e:38:2d": {
+      "device": {
+        "host_name": "Jillians-iPad",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "Jillians-iPad"
+      }
+    },
+    "9c:a2:f4:b8:8e:23": {
+      "device": {
+        "id": 3798,
+        "model_name": "Ethernet"
+      }
+    },
+    "a0:ce:c8:bf:04:a3": {
+      "device": {
+        "host_name": "MW-FQVWJ34",
+        "id": 3798,
+        "model_name": "Ethernet",
+        "name": "MW-FQVWJ34"
+      }
+    },
+    "b8:80:4f:69:de:f6": {
+      "device": {
+        "id": 3797,
+        "model_name": "Wireless"
+      }
+    },
+    "c4:ac:aa:68:f6:be": {
+      "device": {
+        "host_name": "MattsiP14ProMax",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "MattsiP14ProMax"
+      }
+    },
+    "c4:f7:c1:05:13:8b": {
+      "bonjour": {
+        "ip": "192.168.164.214",
+        "services": [
+          "70-35-60-63.1 Basement._sleep-proxy._udp.local",
+          "8E99617F1206@Basement._raop._tcp.local",
+          "Basement._airplay._tcp.local",
+          "Basement._companion-link._tcp.local",
+          "Basement._meshcop._udp.local",
+          "Basement._srpl-tls._tcp.local",
+          "Basement._trel._udp.local",
+          "Basement.local",
+          "_airplay._tcp.local",
+          "_companion-link._tcp.local",
+          "_meshcop._udp.local",
+          "_raop._tcp.local",
+          "_sleep-proxy._udp.local",
+          "_srpl-tls._tcp.local",
+          "_trel._udp.local"
+        ]
+      },
+      "device": {
+        "host_name": "Basement",
+        "id": 3798,
+        "model_name": "Ethernet",
+        "name": "Basement"
+      }
+    },
+    "d0:c5:d3:05:7f:2b": {
+      "device": {
+        "host_name": "Roomba-3168070060407740",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "Roomba-3168070060407740"
+      }
+    },
+    "d6:e8:55:75:19:7e": {
+      "bonjour": {
+        "ip": "192.168.164.216",
+        "services": [
+          "867D5FBB05A7@Matt’s MacBook._raop._tcp.local",
+          "Matts-MacBook.local",
+          "Matt’s MacBook._airplay._tcp.local",
+          "Matt’s MacBook._companion-link._tcp.local",
+          "Matt’s MacBook._rfb._tcp.local",
+          "Matt’s MacBook._sftp-ssh._tcp.local",
+          "Matt’s MacBook._ssh._tcp.local",
+          "_airplay._tcp.local",
+          "_companion-link._tcp.local",
+          "_raop._tcp.local",
+          "_rfb._tcp.local",
+          "_sftp-ssh._tcp.local",
+          "_ssh._tcp.local"
+        ]
+      },
+      "device": {
+        "host_name": "MacBookPro",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "MacBookPro"
+      }
+    },
+    "e0:4f:43:d8:59:88": {
+      "device": {
+        "id": 3797,
+        "model_name": "Wireless"
+      }
+    },
+    "e8:ff:1e:da:72:76": {
+      "bonjour": {
+        "ip": "192.168.164.8",
+        "services": [
+          "0E_79_E4_3D_8F_DB.local",
+          "9A_7D_FF_08_7F_04.local",
+          "B1_93_24_DC_B6_46.local",
+          "Backyard F322._hap._tcp.local",
+          "EA_6F_57_D9_CF_87.local",
+          "Front Door 17C6._hap._tcp.local",
+          "Homebridge Beelink 9C89._hap._tcp.local",
+          "Puppy D506._hap._tcp.local",
+          "_hap._tcp.local"
+        ]
+      },
+      "device": {
+        "host_name": "beelink-01",
+        "id": 3798,
+        "model_name": "Ethernet",
+        "name": "beelink-01"
+      }
+    },
+    "f2:8f:e2:68:d9:26": {
+      "bonjour": {
+        "ip": "192.168.164.220",
+        "services": [
+          "Matt's New iPad._companion-link._tcp.local",
+          "Matt's New iPad._rdlink._tcp.local",
+          "Matts-New-iPad.local",
+          "_companion-link._tcp.local",
+          "_rdlink._tcp.local"
+        ]
+      },
+      "device": {
+        "host_name": "Matts-New-iPad",
+        "id": 3797,
+        "model_name": "Wireless",
+        "name": "Matts-New-iPad"
+      }
+    }
+  }
+]
