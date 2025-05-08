@@ -1,4 +1,4 @@
-﻿FROM --platform=linux/amd64 mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+﻿FROM --platform=linux/amd64 mcr.microsoft.com/dotnet/aspnet:9.0-noble-chiseled AS base
 USER $APP_UID
 WORKDIR /app
 EXPOSE 8080
@@ -11,13 +11,10 @@ COPY ["AmplifiMetrics/AmplifiMetrics.csproj", "AmplifiMetrics/"]
 RUN dotnet restore "AmplifiMetrics/AmplifiMetrics.csproj"
 COPY . .
 WORKDIR "/src/AmplifiMetrics"
-RUN dotnet build "./AmplifiMetrics.csproj" -c $BUILD_CONFIGURATION -o /app/build
-
-FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./AmplifiMetrics.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "AmplifiMetrics.dll"]
