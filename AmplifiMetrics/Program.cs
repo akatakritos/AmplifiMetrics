@@ -8,8 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 var cookieContainer = new CookieContainer();
 builder.Services
-    .AddHttpClient<AmplifiClient, AmplifiClient>(client =>
-        new AmplifiClient(client, builder.Configuration["AmplifiMetricsRouterPassword"]!, cookieContainer))
+    .AddHttpClient<AmplifiClient, AmplifiClient>((sp, client) =>
+        new AmplifiClient(client, builder.Configuration["AmplifiMetricsRouterPassword"]!, cookieContainer, sp.GetRequiredService<ILogger<AmplifiClient>>()))
     .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler()
     {
         CookieContainer = cookieContainer,

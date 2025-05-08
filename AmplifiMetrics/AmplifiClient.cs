@@ -11,13 +11,15 @@ public partial class AmplifiClient
     private readonly HttpClient _client;
     private readonly string _routerPassword;
     private readonly CookieContainer _cookieContainer;
+    private readonly ILogger<AmplifiClient> _logger;
     private static string? _cachedInfoToken;
 
-    public AmplifiClient(HttpClient client, string routerPassword, CookieContainer cookieContainer)
+    public AmplifiClient(HttpClient client, string routerPassword, CookieContainer cookieContainer, ILogger<AmplifiClient> logger)
     {
         _client = client;
         _routerPassword = routerPassword;
         _cookieContainer = cookieContainer;
+        _logger = logger;
     }
 
     public async Task<JsonNode> GetMetrics()
@@ -57,7 +59,8 @@ public partial class AmplifiClient
         }
         catch
         {
-            // reset all our auth dataso that we renew it next time prometheus scrapes us
+            _logger.LogWarning("Crashed while fetching metrics, resetting auth state for next scrape");
+            // reset all our auth data so that we renew it next time prometheus scrapes us
             ResetAuthState();
             
             throw;
@@ -72,6 +75,7 @@ public partial class AmplifiClient
         _cachedInfoToken = null;
         foreach (Cookie cookie in _cookieContainer.GetCookies(_client.BaseAddress!))
             cookie.Expired = true;
+        _logger.LogInformation("Reset auth state");
     }
 
     private async Task EnsureLogin()
