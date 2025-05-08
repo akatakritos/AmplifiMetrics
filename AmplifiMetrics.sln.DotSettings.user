@@ -6,6 +6,7 @@
     &lt;TestId&gt;xUnit::AE3BBC64-9918-4324-A86B-CC67D3BDCD61::net9.0::AmplifiMetrics.Tests.MetricConverterTests.Test1&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::AE3BBC64-9918-4324-A86B-CC67D3BDCD61::net9.0::AmplifiMetrics.Tests.MetricConverterTests.RouterUptime&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::AE3BBC64-9918-4324-A86B-CC67D3BDCD61::net9.0::AmplifiMetrics.Tests.MetricConverterTests.ParsePuraMetrics&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::AE3BBC64-9918-4324-A86B-CC67D3BDCD61::net9.0::AmplifiMetrics.Tests.MetricConverterTests.ParseEthernetMetrics&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d4de850f_002D26ce_002D4294_002Dacd5_002Db550fdb5fd7f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;

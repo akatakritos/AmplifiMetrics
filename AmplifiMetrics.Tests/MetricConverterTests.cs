@@ -38,4 +38,16 @@ public class MetricConverterTests
         var uptime = metrics.Single(m => m.Name == MetricNames.Uptime);
         uptime.Value.ShouldBe(350132);
     }
+    
+    [Fact]
+    public void ParseEthernetMetrics()
+    {
+        var metrics = MetricConverter.Parse(File.ReadAllText(Path.Join("Fixtures", "full.json")))
+            .ToList();
+
+        metrics.Single(m => m.Device == "eth-0" && m.Name == MetricNames.EthernetBitrateTx)
+            .Value.ShouldBe(52);
+        metrics.Single(m => m.Device == "eth-0" && m.Name == MetricNames.EthernetBitrateRx)
+            .Value.ShouldBe(30);
+    }
 }

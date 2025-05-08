@@ -16,6 +16,8 @@ public static class MetricNames
     public const string ReceivedBytes = "amplifi_received_bytes_total";
     public const string TransmittedBytes = "amplifi_transmitted_bytes_total";
     public const string Uptime = "amplifi_uptime_seconds_total";
+    public const string EthernetBitrateTx = "amplifi_ethernet_bitrate_tx";
+    public const string EthernetBitrateRx = "amplifi_ethernet_bitrate_rx";
 }
 
 public static class MetricConverter
@@ -48,6 +50,24 @@ public static class MetricConverter
                 yield return metric;
             }
         }
+
+        if (root[4] is not JsonObject ethernet) yield break;
+        var ports = (JsonObject)ethernet[routerMac];
+        foreach (var port in ports)
+        {
+            if (port.Value["link"].GetValue<bool>())
+            {
+                if (port.Value["rx_bitrate"] is JsonValue rxBitrate)
+                    yield return new Metric(MetricType.Gauge, MetricNames.EthernetBitrateRx,
+                        "Bitrate of the port in bits per second",
+                        rxBitrate.GetValue<double>(), port.Key);
+
+                if (port.Value["tx_bitrate"] is JsonValue txBitrate)
+                    yield return new Metric(MetricType.Gauge, MetricNames.EthernetBitrateTx,
+                        "Bitrate of the port in bits per second",
+                        txBitrate.GetValue<double>(), port.Key);
+            }
+        }
     }
 
     private static IEnumerable<Metric> ParseDevice(string mac, JsonObject device)
@@ -59,19 +79,22 @@ public static class MetricConverter
 
         if (device["HappinessScore"] is JsonValue happinessScore)
         {
-            yield return new Metric(MetricType.Gauge, MetricNames.HappinessScore, "Happiness score is a measure of device connection health",
+            yield return new Metric(MetricType.Gauge, MetricNames.HappinessScore,
+                "Happiness score is a measure of device connection health",
                 happinessScore.GetValue<double>(), deviceName);
         }
 
         if (device["RxBytes"] is JsonValue rxBytes)
         {
-            yield return new Metric(MetricType.Counter, MetricNames.ReceivedBytes, "Total count of bytes received by the device",
+            yield return new Metric(MetricType.Counter, MetricNames.ReceivedBytes,
+                "Total count of bytes received by the device",
                 rxBytes.GetValue<double>(), deviceName);
         }
 
         if (device["TxBytes"] is JsonValue txBytes)
         {
-            yield return new Metric(MetricType.Counter, MetricNames.TransmittedBytes, "Total count of bytes transmitted by the device",
+            yield return new Metric(MetricType.Counter, MetricNames.TransmittedBytes,
+                "Total count of bytes transmitted by the device",
                 txBytes.GetValue<double>(), deviceName);
         }
     }
