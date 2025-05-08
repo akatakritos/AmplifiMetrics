@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Net;
+using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using AngleSharp.Html.Parser;
 
@@ -19,7 +20,7 @@ public partial class AmplifiClient
         _cookieContainer = cookieContainer;
     }
 
-    public async Task<string> GetMetrics()
+    public async Task<JsonNode> GetMetrics()
     {
         try
         {
@@ -49,7 +50,10 @@ public partial class AmplifiClient
             });
 
             response.EnsureSuccessStatusCode();
-            return await response.Content.ReadAsStringAsync();
+            await using var stream = await response.Content.ReadAsStreamAsync();
+            var json = await JsonNode.ParseAsync(stream);
+            Debug.Assert(json is not null);
+            return json;
         }
         catch
         {

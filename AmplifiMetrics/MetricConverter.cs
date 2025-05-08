@@ -22,9 +22,10 @@ public static class MetricNames
 
 public static class MetricConverter
 {
-    public static IEnumerable<Metric> Parse(string metricsJson)
+    public static IEnumerable<Metric> Parse(string json) => Parse(JsonNode.Parse(json));
+    public static IEnumerable<Metric> Parse(JsonNode root)
     {
-        var root = JsonNode.Parse(metricsJson);
+        ArgumentNullException.ThrowIfNull(root);
         if (root is not JsonArray rootArray) yield break;
 
         var router = rootArray[0];
